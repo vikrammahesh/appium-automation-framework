@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="N11 Test Suite" >
     <listeners>
-        <listener class-name="com.mobiletest.utils.TestListeners.TestListener"/>
+        <listener class-name="com.mobiletest.utils.TestListeners.ExtentReportManagerListener"/>
     </listeners>
 
     <test name="LongPress Test">

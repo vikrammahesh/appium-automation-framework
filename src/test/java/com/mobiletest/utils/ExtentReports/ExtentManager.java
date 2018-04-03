@@ -1,5 +1,6 @@
 package com.mobiletest.utils.ExtentReports;
 
+import com.mobiletest.utils.FileUtilties;
 import com.relevantcodes.extentreports.ExtentReports;
 
 public class ExtentManager {
@@ -10,7 +11,9 @@ public class ExtentManager {
         if(extent == null){
             //Set HTML reporting file location
             String workingDir = System.getProperty("user.dir");
-            extent = new ExtentReports(workingDir+"\\Reports\\ExtentReportResults.html", true);
+            FileUtilties fileUtilties =new FileUtilties();
+            fileUtilties.createDirectory("reports");
+            extent = new ExtentReports(workingDir+"\\reports\\ExtentReportResults.html", true);
         }
         return extent;
     }

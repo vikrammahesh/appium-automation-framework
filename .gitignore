@@ -2,3 +2,5 @@
 .idea
 *.apk
 *.iml
+/reports
+

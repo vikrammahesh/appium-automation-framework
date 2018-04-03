@@ -24,4 +24,16 @@ public class LongPressTest extends BaseTest{
         longPressPage.clickOkButton();
         homePage.clickBack();
     }
+
+    @Test(description = "Verify the long press functionality-2")
+    public void longPress2(){
+        homePage=new LoginPage(driver).clickLoginButton();
+        longPressPage=homePage.navigateToLongPressView();
+        longPressPage.longPress();
+        String text=longPressPage.getAlertText();
+        System.out.println(text);
+        Assert.assertEquals(text,"you pressed me hard :P");
+        longPressPage.clickOkButton();
+        homePage.clickBack();
+    }
 }

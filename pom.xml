@@ -36,6 +36,11 @@
       <artifactId>extentreports</artifactId>
       <version>2.41.2</version>
     </dependency>
+    <dependency>
+      <groupId>com.madgag</groupId>
+      <artifactId>animated-gif-lib</artifactId>
+      <version>1.2</version>
+    </dependency>
   </dependencies>
   <build>
   <plugins>
