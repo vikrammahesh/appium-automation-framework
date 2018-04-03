@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="N11 Test Suite" >
+    <listeners>
+        <listener class-name="com.mobiletest.utils.TestListeners.TestListener"/>
+    </listeners>
+
+    <test name="LongPress Test">
+        <classes>
+            <class name="com.mobiletest.test.LongPressTest"/>
+        </classes>
+    </test>
+</suite>

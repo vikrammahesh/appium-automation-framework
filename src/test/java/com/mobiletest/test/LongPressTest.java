@@ -13,14 +13,14 @@ public class LongPressTest extends BaseTest{
     LongPressPage longPressPage;
     HomePage homePage;
 
-    @Test
+    @Test(description = "Verify the long press functionality")
     public void longPress(){
         homePage=new LoginPage(driver).clickLoginButton();
         longPressPage=homePage.navigateToLongPressView();
         longPressPage.longPress();
         String text=longPressPage.getAlertText();
-        System.out.println("text");
-        Assert.assertEquals(text,"you pressed me hard :P");
+        System.out.println(text);
+        Assert.assertEquals(text,"you pressed me hard.. :P");
         longPressPage.clickOkButton();
         homePage.clickBack();
     }
